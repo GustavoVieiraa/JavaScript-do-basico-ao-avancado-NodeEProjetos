@@ -1,0 +1,25 @@
+{
+  "name": "myfreela",
+  "version": "1.0.0",
+  "description": "Sistema para Freelancers encontrar vagas fast no dia a dia.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "Freelancers"
+  ],
+  "author": "Gustavo Vieira",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "sequelize": "^6.37.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

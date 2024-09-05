@@ -1,0 +1,34 @@
+<div id="add-form-container" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Contrate um <span>Freelancer</span> Para Sua <span class="emp">Empresa!</span></h1>
+        </div>
+        <div id="form-box" class="col-md-12">
+            <h2>Preencha os dados necessários para a contratação!</h2>
+            <form action="/jobs/add" method="POST">
+                <div class="form-group">
+                    <label for="title">Título do Freela: </label>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Digite o título do Freelancer" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descrição do Freela: </label>
+                    <textarea type="text" name="description" id="description" class="form-control" placeholder="Descreva as atividades do Freelancer..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="company">Empresa contratante:  </label>
+                    <input type="text" name="company" id="company" class="form-control" placeholder="Informe o nome da empresa contratante." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail para contato: </label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite o E-mail para contato." required>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salário oferecido: </label>
+                    <input type="text" name="salary" id="salary" class="form-control" placeholder="Salário oferecido." required>
+                </div>
+                <input type="hidden" name="new_job" value="1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

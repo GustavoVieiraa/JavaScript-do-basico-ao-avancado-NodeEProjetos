@@ -1,0 +1,37 @@
+<div id="top-container" class="container-fluid text-center my-4">
+        <h1 id="main-title">Encontre o seu <span>Freela</span></h1>
+        <p id="main-subtitle">Conectando Talentos e Oportunidades, Freelancers de Qualidade e Projetos de Sucesso.</p>
+    </div>
+
+    <div class="container">
+        <form id="search-form" class="d-flex justify-content-center mb-4" action="/", method="GET">
+            <input type="text" class="form-control me-2" id="job" name="job" placeholder="Procure aqui o seu Freela...">
+            <button type="submit" class="btn btn-primary">Procurar</button>
+        </form>
+    </div>
+
+    <main>
+        <div id="jobs-container" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{#if search}}
+                        <h2 id="job-list-title">Buscando Freelas que contem: {{search}}</h2>
+                    {{else}}
+                        <h2 id="job-list-title">Confira os Freelas em destaque</h2>
+                    {{/if}}
+                    <ul id="job-list" class="list-group">
+                        {{#each jobs}}
+                        <li class="list-group-item {{#if dataValues.new_job }}new-job{{/if}}">
+                            <img src="/img/company.svg" alt="Company">
+                            <p>{{dataValues.company}}</p>
+                            <h2>{{dataValues.title}}</h2>
+                            <p>R${{dataValues.salary}}</p>
+                            <span class="new-job-label">Nova</span>
+                            <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Ver Vaga</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>

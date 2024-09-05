@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color_primary: #6249BF;
+    --color_dark: #212529;
+    --color_newjob: #F2D43D;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #212529;
+}
+
+
+
+.navbar {
+    background-color: var(--color_dark);
+}
+
+.navbar .navbar-brand{
+    font-weight: 600;
+    border-radius: 2px 6px 2px 8px;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.navbar a span {
+    color: var(--color_primary);
+}
+
+
+.navbar {
+    padding: 1%;
+}
+
+.navbar .nav-item a {
+    color: var(--color_dark);;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar .nav-item .btn {
+    color: #fff;
+    background-color: var(--color_primary);
+    border-radius: 0;
+}
+
+.nav-link.btn.btn-primary:hover {
+    background-color: #fff;
+    color: var(--color_primary);
+}
+
+/*  ### Banner ###  */
+#top-container {
+    margin: auto;
+    border-radius: 2%;
+    width: 100%;
+    height: 400px;
+    padding: 100px;
+    background-image: url(/img/background.png);
+    background-repeat: round;
+    background-size: contain;
+    border: solid 2px var(--color_primary);
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+
+#main-title {
+    padding: 30px 0;
+    font-size: 3rem;
+}
+
+#main-title span {
+    background-color: var(--color_primary);
+    padding: 1%;
+    border-radius: 4px 12px 4px 16px;
+}
+
+#main-subtitle {
+    font-size: 1rem;
+    padding-bottom: 80px;
+
+}
+
+/*      ### FORM ###     */
+
+#search-form {
+    padding: 30px 100px;
+}
+
+#search-form .mb-4, #search-form .col-md-2 {
+    padding: 0;
+}
+
+#search-form input {
+    border: 1px solid var(--color_primary);
+    background-color: var(--color_dark);
+    color: #fff;
+}
+
+#search-form button {
+    background-color: var(--color_primary);
+    border: none;
+}
+
+#search-form button:hover {
+    background-color: #fff;
+    color: var(--color_primary);
+}
+
+#search-form input::placeholder {
+    color: #58646e;
+}
+
+/*      ### LISTA ###       */
+
+#jobs-container {
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+
+#job-list .list-group-item {
+    border-radius: 2px 6px 2px 8px;
+    background-color: #6349bf3f;
+    border: none;
+    color: #fff;
+    margin-bottom: 42px;
+    padding: 15px 80px;
+    height: 140px;
+}
+
+#job-list .list-group-item p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#job-list .list-group-item.new-job {
+    border-radius: 2px 6px 2px 8px;
+    background-color: #f2d43d8c;
+    border: none;
+}
+
+#job-list-title {
+    color: #58646e;
+    margin-bottom: 35px;
+}
+
+.list-group-item img {
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: calc(50% - 40px);
+    background-color: var(--color_primary);
+
+}
+
+#job-list .list-group-item.new-job img  {
+    background-color: var(--color_newjob);
+}
+
+#job-list .list-group-item.new-job a {
+    background-color: var(--color_newjob);
+}
+
+#job-list .list-group-item.new-job a:hover {
+    background-color: #fff;
+    color: var(--color_newjob);
+    font-weight: 600;
+    border: 1px solid var(--color_newjob);
+}
+
+.list-group-item a {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    height: 50px;
+    line-height: 35px;
+    background-color: var(--color_primary);
+    border: 1px solid transparent;
+}
+
+.list-group-item a:hover {
+    background-color: #fff;
+    color: var(--color_primary);
+    font-weight: 600;
+}
+
+.new-job-label {
+    background-color: var(--color_newjob);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 250px;
+    top: -18px;
+    display: none;
+}
+
+.new-job .new-job-label {
+    display: block;
+}
+
+
+/*      ### ADD PAGE ###    */
+
+#add-form-container {
+    margin-top: 100px;
+    color: #FEFEFE;
+}
+
+#add-form-container span {
+    color: var(--color_newjob);
+}
+
+#add-form-container span.emp {
+    color: var(--color_primary);
+}
+
+#add-form-container h1 {
+    margin-bottom: 20px;
+}
+
+#form-box {
+    padding: 80px;
+    box-shadow: 0 1px 5px var(--color_primary);
+    border-radius: 4px;
+    background-color: var(--color_dark);
+    margin-bottom: 50px;
+}
+
+
+#add-form-container h2 {
+    color:#7d8e9c;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#add-form-container form label {
+    font-weight: 500;
+}
+
+
+#add-form-container form input, #add-form-container form textarea {
+    border: 2px solid var(--color_primary);
+    background-color: var(--color_dark);
+    color: #7d8e9c;
+    margin-bottom: 16px;
+}
+
+#add-form-container form input::placeholder, #add-form-container form textarea::placeholder {
+    color: #7d8e9c;
+}
+
+#form-box button {
+    height: 50px;
+    width: 200px;
+    background-color: var(--color_primary);
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+#form-box button:hover {
+    background-color: #fff;
+    color: var(--color_primary);
+}
+
+/*      ### Job-View ###       */
+
+#job-view-container {
+    margin-top: 100px;
+    color: #FFFFFF;
+}
+
+#job-view-container h1 {
+    margin-bottom: 30px;
+}
+
+
+
+#img-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#img-container img {
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--color_primary);    
+    border: 1px solid var(--color_primary);
+}
+
+
+.job-desc {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.money {
+    color: greenyellow;
+}
+
+.main-color {
+    color: var(--color_primary);
+}
+
+.back-link {
+    display: flex;
+    width: auto;
+    padding: 8px 16px;
+    border: 1px solid var(--color_primary);
+    transition: .5s;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    background-color: #fff;
+    color: var(--color_primary);
+}
+
+#job-view-container .new-job {
+    color: var(--color_newjob);
+}
+
+#img-container .new-job  {
+    background-color: var(--color_newjob);
+    border: 1px solid var(--color_newjob);
+}
+
+footer {
+    background-color: var(--color_primary);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 12%;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
